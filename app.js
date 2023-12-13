@@ -5,7 +5,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import connectDB from './db.js';
 import userRoutes from './routes/user.route.js';
-import core from 'cors';
+import cors from 'cors';
 
 dotenv.config();
 
