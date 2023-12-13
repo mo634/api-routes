@@ -5,6 +5,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import connectDB from './db.js';
 import userRoutes from './routes/user.route.js';
+import core from 'cors';
 
 dotenv.config();
 
@@ -20,7 +21,7 @@ connectDB();
 app.use(bodyParser.json());
 
 
-const cors = require('cors');
+
 app.use(cors());
 
 
